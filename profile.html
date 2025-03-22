@@ -18,31 +18,34 @@
                 <ul>
                     <li><a href="#">Recents</a></li>
                     <li><a href="#">Preferences</a></li>
-                    <li><a href="#">Profile</a></li> <!-- Active link -->
+                    <li class="active"><a href="#">Profile</a></li> <!-- Highlight active link -->
                 </ul>
             </nav>
         </aside>
         
         <!-- Main Content -->
         <main>
-            <header style="display: flex; justify-content: center; align-items: center; text-align: center;">
+            <header>
                 <h1>My Profile</h1>
             </header>
             
-            <section class="profile-details">
+            <section class="profile-container">
                 <div class="profile-card">
+                    <img src="profile.png" alt="Profile Picture">
                     <h2>AKSHAYA.P</h2>
                     <p>Email: akshaya@example.com</p>
                     <p>Location: New York, USA</p>
                     <p>Skills: Web Development, Debugging, Editing</p>
                     <button class="btn">Edit Profile</button>
                 </div>
-                
+
                 <div class="profile-stats">
                     <h3>My Stats</h3>
-                    <p>Completed Jobs: 20</p>
-                    <p>Ratings: ⭐️⭐️⭐️⭐️</p>
-                    <p>Experience: 3 years</p>
+                    <div class="stats-box">
+                        <p><strong>Completed Jobs:</strong> 20</p>
+                        <p><strong>Ratings:</strong> ⭐️⭐️⭐️⭐️</p>
+                        <p><strong>Experience:</strong> 3 years</p>
+                    </div>
                 </div>
             </section>
         </main>
