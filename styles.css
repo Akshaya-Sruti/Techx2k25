@@ -115,3 +115,34 @@ header {
 .btn:hover {
     background: #218838;
 }
+/* Preferences Section */
+.preferences-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.preferences-card {
+    background: #1E1E2E;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.preferences-card h2 {
+    margin-bottom: 15px;
+}
+
+.preferences-card label {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.preferences-card input {
+    margin-right: 10px;
+}
+

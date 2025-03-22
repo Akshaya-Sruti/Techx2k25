@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferences</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile.png" alt="User Profile">
+                <h3>AKSHAYA.P</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Recents</a></li>
+                    <li class="active"><a href="#">Preferences</a></li> <!-- Highlight active link -->
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <header>
+                <h1>Preferences</h1>
+            </header>
+
+            <section class="preferences-container">
+                <div class="preferences-card">
+                    <h2>Notification Settings</h2>
+                    <label>
+                        <input type="checkbox" checked> Receive Email Notifications
+                    </label>
+                    <label>
+                        <input type="checkbox"> Receive SMS Notifications
+                    </label>
+                    <label>
+                        <input type="checkbox" checked> Receive In-App Alerts
+                    </label>
+                </div>
+
+                <div class="preferences-card">
+                    <h2>Theme Settings</h2>
+                    <label>
+                        <input type="radio" name="theme" checked> Dark Mode
+                    </label>
+                    <label>
+                        <input type="radio" name="theme"> Light Mode
+                    </label>
+                </div>
+
+                <div class="preferences-card">
+                    <h2>Account Privacy</h2>
+                    <label>
+                        <input type="checkbox" checked> Keep My Profile Public
+                    </label>
+                    <label>
+                        <input type="checkbox"> Hide My Email from Public
+                    </label>
+                </div>
+
+                <button class="btn">Save Changes</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
