@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Marketplace Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile.png" alt="User Profile">
+                <h3>User Name</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Recents</a></li>
+                    <li><a href="#">Preferences</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main>
+            <header style="display: flex; justify-content: center; align-items: center; text-align: center;">
+                <h1>Welcome to our page!</h1>
+            </header>
+            
+            <div class="buttons">
+                <button class="btn" id="jobsBtn">Jobs</button>
+                <button class="btn" id="createBtn">Create</button>
+            </div>
+            
+            <section class="jobs" id="jobsSection">
+                <div class="job-card">
+                    <h2>Debugger</h2>
+                    <p><strong>Required Skills:</strong> JavaScript, Debugging, Problem-Solving</p>
+                    <p>⭐️⭐️⭐️⭐️</p>
+                    <p>Time: 1Hr | Price: 6,000</p>
+                </div>
+                <div class="job-card">
+                    <h2>Web Developer</h2>
+                    <p><strong>Required Skills:</strong> HTML, CSS, JavaScript</p>
+                    <p>⭐️⭐️</p>
+                    <p>Time: 2Hr | Price: 7,500</p>
+                </div>
+                <div class="job-card">
+                    <h2>Editor</h2>
+                    <p><strong>Required Skills:</strong> Writing, Proofreading, Content Creation</p>
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <p>Time: 2Hr | Price: 8,000</p>
+                </div>
+            </section>
+            
+            <!-- Create Job Form -->
+            <section class="create-job" id="createJobSection">
+                <h2>Create a Job</h2>
+                <form class="job-form">
+                    <div class="form-group">
+                        <label for="job-name">Job Name:</label>
+                        <input type="text" id="job-name" name="job-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hours">Hours:</label>
+                        <input type="number" id="hours" name="hours" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price:</label>
+                        <input type="number" id="price" name="price" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rating:</label>
+                        <input type="number" id="rating" name="rating" min="1" max="5" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="skills">Required Skills:</label>
+                        <input type="text" id="skills" name="skills" required>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    
+    <script>
+        document.getElementById("jobsBtn").addEventListener("click", function() {
+            document.getElementById("jobsSection").scrollIntoView({ behavior: "smooth" });
+        });
+        
+        document.getElementById("createBtn").addEventListener("click", function() {
+            document.getElementById("createJobSection").scrollIntoView({ behavior: "smooth" });
+        });
+    </script>
+</body>
+</html>
