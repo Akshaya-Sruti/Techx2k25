@@ -17,13 +17,13 @@ body {
 .sidebar {
     width: 200px;
     background-color: #2C2C54;
-    padding: 20px;
+    padding: 50px;
     height: 100vh;
 }
 
 .profile {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .profile img {
