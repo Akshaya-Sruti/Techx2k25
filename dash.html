@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skill Marketplace Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -16,21 +17,22 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Recents</a></li>
-                    <li><a href="#">Preferences</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Recents</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i> Preferences</a></li>
                 </ul>
             </nav>
         </aside>
         
         <!-- Main Content -->
         <main>
-            <header style="display: flex; justify-content: center; align-items: center; text-align: center;">
+            <header class="header">
                 <h1>GIGHIVE</h1>
+                <input type="text" class="search-bar" placeholder="Search Jobs...">
             </header>
             
             <div class="buttons">
-                <button class="btn">Jobs</button>
-                <button class="btn">Create</button>
+                <button class="btn primary">Jobs</button>
+                <button class="btn secondary">Create</button>
             </div>
             
             <section class="jobs">
@@ -49,6 +51,7 @@
                     <p>⭐️⭐️⭐️⭐️⭐️</p>
                     <p>Time: 2Hr | Price: 8,000</p>
                 </div>
+                <button class="btn view-more">View More</button>
             </section>
         </main>
     </div>
