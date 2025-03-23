@@ -1,67 +1,189 @@
-/* Centering Main Content */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F6F9;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #1E1E2E;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    width: 100%;
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #3A3A5E;
+}
+
+/* Main Content */
 main {
     flex: 1;
     padding: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers content horizontally */
-    justify-content: center; /* Centers content vertically */
+    align-items: center;
     text-align: center;
 }
 
-/* Preferences Container */
-.preferences-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Header */
+.header-container {
     width: 100%;
-}
-
-/* Preferences Card */
-.preferences-card {
-    background: #1E1E2E;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 30px;
     border-radius: 10px;
-    width: 50%; /* Adjust this to control the card width */
-    text-align: center;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Box */
+.search-box {
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
-/* Toggle Container */
-.toggle-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 10px;
-    flex-direction: column; /* Stack toggle switches vertically */
+.search-box input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
 }
 
-/* Save Button */
-.save-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 30px;
-    padding-bottom: 20px;
-}
-
-.save-btn {
-    background: #28A745;
+.search-box button {
+    background: #007BFF;
     color: white;
     border: none;
-    padding: 12px 24px;
-    border-radius: 5px;
-    font-size: 18px;
+    padding: 8px 12px;
     cursor: pointer;
-    transition: background 0.3s;
-    margin-top: 20px;
+    border-radius: 5px;
 }
 
-.save-btn:hover {
+.search-box button:hover {
+    background: #0056b3;
+}
+
+/* Dashboard Buttons */
+.dashboard-buttons {
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn.primary {
+    background: #007BFF;
+    color: white;
+}
+
+.btn.primary:hover {
+    background: #0056b3;
+}
+
+.btn.secondary {
+    background: #28A745;
+    color: white;
+}
+
+.btn.secondary:hover {
     background: #218838;
+}
+
+/* Job Cards */
+.jobs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.job-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* View More Button */
+.view-more {
+    background: #FF9800;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.view-more:hover {
+    background: #E68900;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
 }
