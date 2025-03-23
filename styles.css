@@ -3,7 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4F6F9;
+    background-color: #0F0F0F; /* Dark background */
+    color: white;
 }
 
 /* Layout */
@@ -15,7 +16,7 @@ body {
 /* Sidebar */
 .sidebar {
     width: 250px;
-    background: #1E1E2E;
+    background: #14163B; /* Dark Blue */
     color: white;
     padding: 20px;
     display: flex;
@@ -28,6 +29,7 @@ body {
     height: 80px;
     border-radius: 50%;
     margin-bottom: 10px;
+    border: 2px solid white;
 }
 
 nav ul {
@@ -54,7 +56,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #3A3A5E;
+    background: #2A2D66; /* Brighter Blue */
 }
 
 /* Main Content */
@@ -73,10 +75,10 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
+    background: #1A1A1A; /* Darker Black */
     padding: 15px 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
 /* Search Box */
@@ -87,13 +89,15 @@ main {
 
 .search-box input {
     padding: 8px;
-    border: 1px solid #ccc;
+    border: none;
+    background: #202020;
+    color: white;
     border-radius: 5px;
     margin-right: 5px;
 }
 
 .search-box button {
-    background: #007BFF;
+    background: #2A2D66;
     color: white;
     border: none;
     padding: 8px 12px;
@@ -102,7 +106,7 @@ main {
 }
 
 .search-box button:hover {
-    background: #0056b3;
+    background: #3A3D99;
 }
 
 /* Dashboard Buttons */
@@ -146,29 +150,29 @@ main {
 }
 
 .job-card {
-    background: white;
+    background: #14163B;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
     text-align: left;
     transition: 0.3s;
 }
 
 .job-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 /* View More Button */
 .view-more {
-    background: #FF9800;
+    background: #28A745;
     color: white;
     width: 100%;
     margin-top: 10px;
 }
 
 .view-more:hover {
-    background: #E68900;
+    background: #218838;
 }
 
 /* Responsive */
