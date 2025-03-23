@@ -63,25 +63,56 @@ main {
     padding: 30px;
 }
 
-header {
+/* Header */
+.header-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     background: #1E1E2E;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-/* Preferences Container */
-.preferences-container {
+/* Search Box */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #2C2C54;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    color: white;
+    padding: 5px;
+    outline: none;
+}
+
+.search-box button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.search-box button i {
+    font-size: 16px;
+}
+
+/* Profile Container */
+.profile-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
 }
 
-/* Preferences Card */
-.preferences-card {
+/* Profile Card */
+.profile-card {
     background: #1E1E2E;
     padding: 20px;
     border-radius: 10px;
@@ -90,86 +121,67 @@ header {
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
 }
 
-.preferences-card h2 {
+.profile-card img {
+    width: 120px;
+    border-radius: 50%;
     margin-bottom: 15px;
+    border: 3px solid white;
 }
 
-/* Toggle Containers */
-.toggle-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #2C2C54;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px 0;
+/* Profile Stats */
+.profile-stats {
+    background: #1E1E2E;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
 }
 
-.toggle-container label {
-    font-size: 16px;
+.profile-stats h3 {
+    margin-bottom: 15px;
 }
 
-/* Switch Styles */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 34px;
-    height: 20px;
+.stats-box {
+    background: #2C2C54;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
 }
 
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+.stats-box p {
+    margin: 5px 0;
 }
 
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-    border-radius: 20px;
+/* Experience and Certifications Sections */
+.profile-section {
+    background: #1E1E2E;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
 }
 
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 14px;
-    width: 14px;
-    left: 3px;
-    bottom: 3px;
-    background-color: white;
-    transition: 0.4s;
-    border-radius: 50%;
+.profile-section h3 {
+    margin-bottom: 15px;
 }
 
-input:checked + .slider {
-    background-color: #28A745;
-}
-
-input:checked + .slider:before {
-    transform: translateX(14px);
-}
-
-/* Save Button */
-.save-btn {
-    padding: 12px 24px;
+/* Buttons */
+.btn {
+    padding: 10px 20px;
     background: #28A745;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     transition: 0.3s;
-    font-size: 16px;
-    display: block;
-    margin: 20px auto;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.save-btn:hover {
+.btn:hover {
     background: #218838;
 }

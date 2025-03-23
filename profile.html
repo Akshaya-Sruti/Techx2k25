@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -18,19 +19,22 @@
                 <ul>
                     <li><a href="#">Recents</a></li>
                     <li><a href="#">Preferences</a></li>
-                    <li class="active"><a href="#">Profile</a></li> <!-- Highlight active link -->
+                    <li class="active"><a href="#">Profile</a></li>
                 </ul>
             </nav>
         </aside>
         
         <!-- Main Content -->
         <main>
-            <header>
+            <header class="header-container">
                 <h1>My Profile</h1>
+                <div class="search-box">
+                    <input type="text" placeholder="Search profile...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
             </header>
             
             <section class="profile-container">
-                <!-- Profile Information -->
                 <div class="profile-card">
                     <img src="profile.png" alt="Profile Picture">
                     <h2>AKSHAYA.P</h2>
@@ -40,7 +44,6 @@
                     <button class="btn">Edit Profile</button>
                 </div>
 
-                <!-- Stats Section -->
                 <div class="profile-stats">
                     <h3>My Stats</h3>
                     <div class="stats-box">
@@ -50,7 +53,6 @@
                     </div>
                 </div>
 
-                <!-- Experience Section -->
                 <div class="profile-section">
                     <h3>Experience</h3>
                     <div class="stats-box">
@@ -61,7 +63,6 @@
                     </div>
                 </div>
 
-                <!-- Certifications Section -->
                 <div class="profile-section">
                     <h3>Certifications</h3>
                     <div class="stats-box">
