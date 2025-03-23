@@ -1,1 +1,60 @@
-<button class="btn secondary" onclick="window.location.href='create-job.html'">Create</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile.png" alt="User Profile">
+                <h3>AKSHAYA.P</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i> Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main>
+            <header class="header-container">
+                <h1>Dashboard</h1>
+            </header>
+            
+            <section class="profile-stats">
+                <h3>Job Overview</h3>
+                <div class="stats-box">
+                    <p><strong>Active Jobs:</strong> 10</p>
+                    <p><strong>Completed Jobs:</strong> 25</p>
+                    <p><strong>Pending Jobs:</strong> 5</p>
+                </div>
+            </section>
+            
+            <section class="jobs-container">
+                <div class="job-card">
+                    <h2>Web Developer</h2>
+                    <p><strong>Price:</strong> $500</p>
+                    <p><strong>Time:</strong> 40 hrs</p>
+                    <p><strong>Skills:</strong> HTML, CSS, JS</p>
+                </div>
+                
+                <div class="job-card">
+                    <h2>UI/UX Designer</h2>
+                    <p><strong>Price:</strong> $700</p>
+                    <p><strong>Time:</strong> 50 hrs</p>
+                    <p><strong>Skills:</strong> Figma, Adobe XD</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
